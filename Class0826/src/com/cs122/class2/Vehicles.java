@@ -9,6 +9,7 @@ public class Vehicles {
 		this.typeOfCar = typeOfCar;
 		this.yearMake = yearMake;
 	}
+	// name of variables
 	//camelCasing
 	// getDetails <--- this format
 	

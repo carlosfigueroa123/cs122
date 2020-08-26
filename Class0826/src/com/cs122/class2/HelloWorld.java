@@ -14,7 +14,7 @@ public class HelloWorld {
 		int integerOne = 12;
 		String name = "Dhruv";
 		System.out.println("Hello WOrld");
-		System.out.println("Hello" + name + "your lucky number is " + randomInt);
+		System.out.println("Hello " + name + " your lucky number is " + randomInt);
 
 		if (integerOne > 15) {
 //			if the expression is true
