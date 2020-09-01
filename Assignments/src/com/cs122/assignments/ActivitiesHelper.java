@@ -5,6 +5,7 @@ public class ActivitiesHelper {
 	public static void main (String[] args) {
 		
 		boolean odd;
+		
 		  Activities act = new Activities();
 
 		  act.printActivity();
