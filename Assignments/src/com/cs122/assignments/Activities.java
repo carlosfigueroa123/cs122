@@ -6,25 +6,30 @@ public class Activities {
 			 public static String locationType = "corn field";
 	     public static boolean oddHours = false;
 		    
-
-	 public static void printActivity() {
+public Activities(){
+	suggestedHours = 2;
+	locationType = "corn field";
+	activityName = "soccer";
+}
+	 public void printActivity() {
 	    	System.out.println("The " + locationType + " activity " + activityName + " is suggested for " + suggestedHours + " hours");
 	    	
 	    }
 
-	  public static void preferredActivity(String activityPreferred){
+	  public void preferredActivity(String activityPreferred){
 	    System.out.println("I prefer " + activityPreferred + " over " + activityName);
 
 	  }
 	  
-	  public static boolean getOddHours(){
-	if (suggestedHours >= 7){
-	  return true;
+	  public boolean getOddHours(){
+	if (suggestedHours%2 == 0){
+	  return false;
 	}
 	else{
-	  return false;
+	  return true;
 	}
 	  }
 	  
 		
 	}
+
