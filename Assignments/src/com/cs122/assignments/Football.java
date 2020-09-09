@@ -11,7 +11,7 @@ public class Football extends PointSports {
 	 return numPlayers = 11;
  }
  
- public void setBasketResults(int team1, int team2) {
+ public void setFootballResults(int team1, int team2) {
 	 this.pointsTeam1 = team1;
 	 this.pointsTeam2 = team2;
  }
