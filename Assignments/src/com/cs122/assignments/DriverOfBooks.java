@@ -16,9 +16,8 @@ public class DriverOfBooks {
 		
 		t.characteristicsOfTextbooks("textbook2");
 		
-		
-		
 
+		
 
 	}
 
