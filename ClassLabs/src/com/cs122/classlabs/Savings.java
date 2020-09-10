@@ -2,7 +2,6 @@ package com.cs122.classlabs;
 
 public class Savings extends Deposit{
 
-protected double limit;
 protected double result;
 protected double balance2;
 protected double interest2;
@@ -16,6 +15,7 @@ protected double interest2;
  limit = limit1;
  balance2 = balance1;
  interest2 = interest1;
+ type = "Savings account";
 }
 	
 	protected double balance() {

@@ -3,7 +3,6 @@ package com.cs122.classlabs;
 public class Checking extends Deposit{
 
 	
-	protected double fees;
 	protected double result;
 	protected double balance2;
 	protected double interest2;
@@ -16,6 +15,7 @@ public class Checking extends Deposit{
  fees = fees1;
  balance2 = balance1;
  interest2 = interest1;
+ type = "Checking account";
 }
 	
 	protected double balance() {

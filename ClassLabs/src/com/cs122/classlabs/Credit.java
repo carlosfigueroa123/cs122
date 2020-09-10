@@ -3,7 +3,6 @@ package com.cs122.classlabs;
 public class Credit extends Account {
 
 	
-protected double APR;
 protected double balance2;
 protected double result;
 	
@@ -14,6 +13,7 @@ protected double result;
 
  APR = apr1;
  balance2 = balance1;
+ type = "Credit account";
 }
 	
 	protected double balance() {

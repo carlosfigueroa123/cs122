@@ -8,15 +8,15 @@ public class Bank {
 	   {
 	      icu = new Account[5];
 
-	      icu[0] = new Credit("Sam", 560, 5.3);
+	      icu[0] = new Credit("Sam Diaz", 560, 5.3);
 
-	      icu[1] = new Deposit("Carla", 340, 2.3);
+	      icu[1] = new Deposit("Carla Rodriguez", 340, 2.3);
 	      
-	      icu[2] = new Savings("Woody", 1200,  2.3, 2000);
+	      icu[2] = new Savings("Woody Allen", 1200,  2.3, 2000);
 
-	      icu[3] = new Checking("Diane", 300, 2.3, 5.0);
+	      icu[3] = new Checking("Diane Dior", 300, 2.3, 5.0);
 
-	      icu[4] = new Checking("Norm", 750,  2.4, 4.0);
+	      icu[4] = new Checking("Norm Andia", 750,  2.4, 4.0);
 	      
 	   }
 	   public void balance ()
@@ -27,13 +27,14 @@ public class Bank {
 	      {
 	         System.out.println(icu[count]);
 
-	         amount = icu[count].balance();  // polymorphic
+	         amount = icu[count].balance(); // polymorphic
+	         
 
 	         if (amount == 0.0)
 	            System.out.println("");
 	         else
 	            System.out.println("Real balance (including fees and interest): " + amount);
-
+	         
 	         System.out.println("-----------------------------------");
 	      }
 	   }
