@@ -7,7 +7,7 @@ public class Activities {
 	public static int suggestedHours = 2;
 	public static String locationType = "corn field";
 	// you dont need this variable
-	public static boolean oddHours = false;
+	//public static boolean oddHours = false;
 
 	public Activities() {
 		suggestedHours = 2;

@@ -1,3 +1,5 @@
+package com.cs122.classlabs.Chapter10;
+
 //********************************************************************
 //  PhoneList2.java       Author: Lewis/Loftus
 //
@@ -38,10 +40,12 @@ public class PhoneList2
         sorts.selectionSort(friends);
 
         test = new Contact ("Mario", "Guzman", "");
-        found = (Contact) searches.binarySearch(friends, test);
+        found = (Contact) searches.binarySearch(friends, test); // why do we cast here? and not in last
         if (found != null)
             System.out.println ("Found: " + found);
         else
             System.out.println ("The contact was not found.");
+        
+        //use the slides of the class to complete the lab and the homework.
     }
 }

@@ -1,3 +1,8 @@
+package com.cs122.classlabs.Chapter10;
+
+import java.awt.List;
+import java.sql.Array;
+
 //********************************************************************
 //  Searching.java       Author: Lewis/Loftus
 //
@@ -11,21 +16,21 @@ public class Searching<T>
     //  a linear search. Returns a reference to the target object from
     //  the array if found, and null otherwise.
     //-----------------------------------------------------------------
-    public T linearSearch(T[] list, T target)
+    public Students linearSearch ( Students [] friends , Students test1)
     {
         int index = 0;
-        boolean found = false;
+        boolean found2 = false;
 
-        while (!found && index < list.length)
+        while (!found2 && index < ((friends).length))
         {
-            if (list[index].equals(target))
-                found = true;
+            if (friends[index].equals(test1))
+                found2 = true;
             else
-                index++;
+                index++;// this means it sums up
         }
 
-        if (found)
-            return list[index];
+        if (found2)
+            return friends[index];
         else
             return null;
     }
@@ -36,27 +41,69 @@ public class Searching<T>
     //  ascending order when it is passed in. Returns a reference to
     //  the target object from the array if found, and null otherwise.
     //-----------------------------------------------------------------
-    public Comparable<T> binarySearch(Comparable<T>[] list,
-            Comparable<T> target)
+    public Students binarySearch(Students[] friends,
+            Students test1)
     {
-        int min = 0, max = list.length - 1, mid = 0;
+        int min = 0, max = friends.length - 1, mid = 0;
         boolean found = false;
 
         while (!found && min <= max)
         {
             mid = (min+max) / 2;
-            if (list[mid].equals(target))
+            if (friends[mid].equals(test1))
                 found = true;
             else
-                if (target.compareTo((T)list[mid]) < 0)
+                if (test1.compareTo((Students)friends[mid]) < 0)//because we have to compare if x>n/2 and if it is possible it means that goes up, negative goes left and 0 is the same, so to not do else if, and because we are not trying to find they are equal, we just want to see it we go right
                     max = mid-1;
                 else
                     min = mid+1;
         }
 
         if (found)
-            return list[mid];
+            return friends[mid];
         else
             return null;
     }
+
+	public Contact linearSearch(Contact[] friends, Contact test) {
+		
+		 int index = 0;
+	        boolean found = false;
+
+	        while (!found && index < ((friends).length))
+	        {
+	            if (friends[index].equals(test))
+	                found = true;
+	            else
+	                index++;// this means it sums up
+	        }
+
+	        if (found)
+	            return friends[index];
+	        else
+		
+		return null;
+	}
+
+	public Contact binarySearch(Contact[] friends, Contact test) {
+		 int min = 0, max = friends.length - 1, mid = 0;
+	        boolean found = false;
+
+	        while (!found && min <= max)
+	        {
+	            mid = (min+max) / 2;
+	            if (friends[mid].equals(test))
+	                found = true;
+	            else
+	                if (test.compareTo((Contact)friends[mid]) < 0)//because we have to compare if x>n/2 and if it is possible it means that goes up, negative goes left and 0 is the same, so to not do else if, and because we are not trying to find they are equal, we just want to see it we go right
+	                    max = mid-1;
+	                else
+	                    min = mid+1;
+	        }
+
+	        if (found)
+	            return friends[mid];
+	        else
+		return null;
+	}
 }

@@ -6,14 +6,14 @@ package com.cs122.classlabs.Chapter10;
 //  Represents a phone contact.
 //********************************************************************
 
-public class Contact implements Comparable<Contact>
+public class Contact implements Comparable<Contact>//are we instantiating t here?, also,does comparable works as a type of interfase?
 {
-    private String firstName, lastName, phone;
-
+    private String firstName, lastName, phone;//why not protected?
+//comparable is an interfase from java
     //-----------------------------------------------------------------
     //  Constructor: Sets up this contact with the specified data.
     //-----------------------------------------------------------------
-    public Contact(String first, String last, String telephone)
+    public Contact(String first, String last, String telephone)//this is a constructor
     {
         firstName = first;
         lastName = last;
@@ -23,7 +23,7 @@ public class Contact implements Comparable<Contact>
     //-----------------------------------------------------------------
     //  Returns a description of this contact as a string.
     //-----------------------------------------------------------------
-    public String toString()
+    public String toString() // where are we using this method?
     {
         return lastName + ", " + firstName + "\t" + phone;
     }
@@ -31,16 +31,16 @@ public class Contact implements Comparable<Contact>
     //-----------------------------------------------------------------
     //  Returns a description of this contact as a string.
     //-----------------------------------------------------------------
-    public boolean equals(Object other)
+    public boolean equals(Object other)//object? what is that?
     {
         return (lastName.equals(((Contact)other).getLastName()) &&
-                firstName.equals(((Contact)other).getFirstName()));
+                firstName.equals(((Contact)other).getFirstName()));//what?
     }
 
     //-----------------------------------------------------------------
     //  Uses both last and first names to determine ordering.
     //-----------------------------------------------------------------
-    public int compareTo(Contact other)
+    public int compareTo(Contact other)//are contact and object both subjective objects?
     {
         int result;
 

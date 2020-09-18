@@ -12,7 +12,7 @@ public class Sorting<T>
     //  Sorts the specified array of objects using the selection
     //  sort algorithm.
     //-----------------------------------------------------------------
-    public void selectionSort(Comparable<T>[] list)
+    public void selectionSort(Comparable<T>[] list)//what does T means. it is every element? do we need to instantiate it is contacts? where do we do this?
     {
         int min;
         Comparable<T> temp;
@@ -21,7 +21,7 @@ public class Sorting<T>
         {
             min = index;
             for (int scan = index+1; scan < list.length; scan++)
-                if (list[scan].compareTo((T)list[min]) < 0)
+                if (list[scan].compareTo((T)list[min]) < 0)// what is happening here?
                     min = scan;
 
             // Swap the values
@@ -39,11 +39,11 @@ public class Sorting<T>
     {
         for (int index = 1; index < list.length; index++)
         {
-            Comparable<T> key = list[index];
+            Comparable<T> key = list[index]; // we are using key to take specific values of the list and using it to compare it
             int position = index;
 
             //  Shift larger values to the right
-            while (position > 0 && key.compareTo((T)list[position-1]) < 0)
+            while (position > 0 && key.compareTo((T)list[position-1]) < 0)//position-1 is comparing with the number in the iteration behind
             {
                 list[position] = list[position-1];
                 position--;
@@ -53,25 +53,7 @@ public class Sorting<T>
         }
     }
 }
-]
+
 		
 		
-		
-		
-4,3,6,1,5,2
-
-6,/3,4,1,5,2
-6,5,/4,1,3,2
-6,5,4,/1,3,2
-6,5,4,3,/1,2
-6,5,4,3,2,/1
-
-
-
-
-
-
-1,3,6,4,5,2
-1,2,6,4,5,3
-1,2,3,4,5,6
 
