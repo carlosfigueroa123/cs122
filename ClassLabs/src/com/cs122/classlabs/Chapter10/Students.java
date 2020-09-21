@@ -21,8 +21,8 @@ public class Students implements Comparable<Students> {
 	
 	public boolean equals(Object other)//object? what is that?
     {
-        return (name.equals(((Students)other).getName()) &&
-                uid.equals(((Students)other).getID()));
+        return (uid.equals(((Students)other).getID()));
+                
     }
 	
 	public int compareTo(Students other)
@@ -32,7 +32,7 @@ public class Students implements Comparable<Students> {
         if (uid.equals(other.getID()))
             result = uid.compareTo(other.getID());
      else 
-        result = name.compareTo(other.getName());
+        result = name.compareTo(other.getID());
         
         return result;
     }
