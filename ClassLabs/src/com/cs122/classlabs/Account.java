@@ -20,7 +20,7 @@ public abstract class Account {
 	      String result = "Name: " + name + "\n";
 	    
 	      result += "Nominal(entry): " + balance + "\n" + "Interest: " + interest + "\n" + "Limit: " + limit + "\n" + "APR: " + APR + "\n" + "Fees: " + fees;
-
+	     
 	      result += "\n" + "Type of account: " + type;
 	      return result;
 	   }
@@ -30,3 +30,5 @@ public abstract class Account {
 	
 
 }
+
+
