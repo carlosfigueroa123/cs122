@@ -1,4 +1,4 @@
-package com.cs122.classlabs.Chapter10;
+package com.cs122.assignments;
 
 
 //********************************************************************
@@ -42,5 +42,10 @@ public class Executive extends Employee
       bonus = 0;
 
       return payment;
+   }
+   public int vacations() {//here we override the method and add 7 days more as an standart for an executive
+	   super.vacations();
+	   numDays = numDays + 7;
+	   return numDays;
    }
 }
