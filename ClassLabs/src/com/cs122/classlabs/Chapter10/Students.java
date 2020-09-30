@@ -14,7 +14,7 @@ public class Students implements Comparable<Students> {
         name= second;
        
     }
-	public String toString() // where are we using this method?
+	public String toString() // it will print an address if not here
     {
 		return name + ", " + uid;
     }
@@ -31,8 +31,9 @@ public class Students implements Comparable<Students> {
 
         if (uid.equals(other.getID()))
             result = uid.compareTo(other.getID());
-     else 
-        result = name.compareTo(other.getID());
+        
+    	else 
+        result = name.compareTo(other.getID()); //why not to getName?
         
         return result;
     }

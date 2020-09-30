@@ -4,8 +4,8 @@ public class Vehicles {
 	
 	protected int wheels;
 	
-	public void setWheels(int numWheels) {
-		wheels = numWheels;
+	public void setWheels(int w) {
+		wheels = 4;
 	}
     public int getWheels() {
     	return wheels;

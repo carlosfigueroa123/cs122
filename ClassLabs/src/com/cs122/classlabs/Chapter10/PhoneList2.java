@@ -29,6 +29,7 @@ public class PhoneList2
         Searching<Contact> searches = new Searching<Contact>();
 
         test = new Contact("Frank", "Phelps", "");
+       
         found = searches.linearSearch(friends, test);
         if (found != null)
             System.out.println ("Found: " + found);

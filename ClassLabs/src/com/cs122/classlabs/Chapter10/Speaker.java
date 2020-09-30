@@ -1,6 +1,7 @@
 package com.cs122.classlabs.Chapter10;
 
 public interface Speaker {
+	
 	public abstract void speak();
 //	is same as public void speak();
 

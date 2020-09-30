@@ -14,6 +14,7 @@ public class Programming {
         friends[4] = new Students("U46453534", "Larry");
         friends[5] = new Students("U32255284", "Frank");
         
+        //I have a question, how can I change this to look at the name as well, and find the student ID?
 
         Searching<Students> searches = new Searching<Students>();
 
@@ -28,7 +29,7 @@ public class Programming {
         Sorting<Students> sorts = new Sorting<Students>();
         sorts.selectionSort(friends);
 
-        test1 = new Students ("U21577538", " ");
+        test1 = new Students ("U21577538", "");
         found1 = (Students) searches.binarySearch(friends, test1); // why do we cast here? and not in last
         if (found1 != null)
             System.out.println ("Found: " + found1);

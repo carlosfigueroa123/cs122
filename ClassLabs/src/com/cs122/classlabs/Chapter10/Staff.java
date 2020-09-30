@@ -8,7 +8,7 @@ package com.cs122.classlabs.Chapter10;
 
 public class Staff
 {
-   private StaffMember[] staffList;
+   private StaffMember[] staffList; // here, the object staffmember is an abstract class that can only be extantiated as an ARRAY
 
    //-----------------------------------------------------------------
    //  Constructor: Sets up the list of staff members.
@@ -49,7 +49,7 @@ public class Staff
       {
          System.out.println(staffList[count]);
 
-         amount = staffList[count].pay();  // polymorphic
+         amount = staffList[count].pay();  // polymorphic and IMPORTANT
 
          if (amount == 0.0)
             System.out.println("Thanks!");

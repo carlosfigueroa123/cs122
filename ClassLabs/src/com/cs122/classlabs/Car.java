@@ -9,7 +9,7 @@ public class Car extends Vehicles {
 
 
 public void getDetails () {
-	System.out.println("the number of wheels is " + this.getWheels() + " and the number of gears is " + gears);
+	System.out.println("the number of wheels is " + getWheels() + " and the number of gears is " + gears);
 }
 
 
