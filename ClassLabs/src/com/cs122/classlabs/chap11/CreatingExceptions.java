@@ -29,7 +29,7 @@ public class CreatingExceptions
 
         //  Determine if the exception should be thrown
         if (value < MIN || value > MAX)
-            throw problem;
+            throw problem;//because problem is a outofrangeexception
 
         System.out.println("End of main method.");  // may never reach
     }
