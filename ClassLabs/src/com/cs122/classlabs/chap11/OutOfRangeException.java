@@ -15,6 +15,6 @@ public class OutOfRangeException extends Exception
     //-----------------------------------------------------------------
     OutOfRangeException(String message)
     {
-        super(message);
+        super(message); //super is calling the constructor of the exception class, which makes it a checked exception
     }
 }
