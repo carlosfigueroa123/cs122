@@ -5,7 +5,14 @@ public class Lift {
 	
 	public void floor1() {
 		System.out.println("First floor");
+		try {
 		floor2();
+		}
+		catch (Exception e) {
+			System.out.println(e.getMessage());
+			System.out.println("The call stack trace:");
+            e.printStackTrace();
+		}
 	}
 	
 	public void floor2() {
