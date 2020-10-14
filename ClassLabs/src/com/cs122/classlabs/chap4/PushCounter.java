@@ -30,12 +30,12 @@ public class PushCounter extends Application
         count = 0;
         countText = new Text("Pushes: 0");
 
-        Button push = new Button("Push Me!");
-        push.setOnAction(this::processButtonPress);
+        Button push = new Button("Push Me!"); //we could define this at the beginning
+        push.setOnAction(this::processButtonPress);//refers to this specific method
 
-        FlowPane pane = new FlowPane(push, countText);
-        pane.setAlignment(Pos.CENTER);
-        pane.setHgap(20);
+        FlowPane pane = new FlowPane(push, countText);//not stackpane
+        pane.setAlignment(Pos.CENTER); //the bottom is on the center
+        pane.setHgap(20);// h is horizontal v is vertical
         pane.setStyle("-fx-background-color: cyan");
 
         Scene scene = new Scene(pane, 300, 100);
@@ -48,9 +48,9 @@ public class PushCounter extends Application
     //--------------------------------------------------------------------
     //  Updates the counter and text when the button is pushed.
     //--------------------------------------------------------------------
-    public void processButtonPress(ActionEvent event)
+    public void processButtonPress(ActionEvent event)//this parameter is very important
     {
-        count++;
+        count++;//here is where we shoudl put the uses of the bottom
         countText.setText("Pushes: " + count);
     }
     

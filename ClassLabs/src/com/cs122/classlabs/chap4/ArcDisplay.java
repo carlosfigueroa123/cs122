@@ -26,7 +26,7 @@ public class ArcDisplay extends Application
         Ellipse backgroundEllipse = new Ellipse(250, 150, 170, 100);
         backgroundEllipse.setFill(null);
         backgroundEllipse.setStroke(Color.GRAY);
-        backgroundEllipse.getStrokeDashArray().addAll(5.0, 5.0);
+        backgroundEllipse.getStrokeDashArray().addAll(5.0, 5.0); //this is to set lines whereas a pure line, and constructors are dashes and gaps
                 
         Arc arc1 = new Arc(250, 150, 170, 100, 90, 90);
         arc1.setType(ArcType.OPEN);
