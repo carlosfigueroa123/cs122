@@ -15,10 +15,11 @@ import javafx.scene.text.Font;
 //  Demonstrates the use of a TextField and a GridPane.
 //************************************************************************
 
-public class FahrenheitPane extends GridPane
+public class FahrenheitPane extends GridPane // all methods here come from gridpane, and they are static
+//if we dont inherite gridpane class, we have to create an object of the class
 {
     private Label result;
-    private TextField fahrenheit;
+    private TextField fahrenheit; //what does textfield means specifically
 
     //--------------------------------------------------------------------
     //  Sets up a GUI containing a labeled text field for converting

@@ -33,7 +33,7 @@ public class PushCounter extends Application
         Button push = new Button("Push Me!"); //we could define this at the beginning
         push.setOnAction(this::processButtonPress);//refers to this specific method
 
-        FlowPane pane = new FlowPane(push, countText);//not stackpane
+        FlowPane pane = new FlowPane(push, countText);//not stackpane nor gridpane(from farentheit)
         pane.setAlignment(Pos.CENTER); //the bottom is on the center
         pane.setHgap(20);// h is horizontal v is vertical
         pane.setStyle("-fx-background-color: cyan");
