@@ -56,6 +56,7 @@ public class FontDemo extends Application
         
         Text text6 = new Text(250, 180, "Don't learn HTML.");
         text6.setFont(font6);
+        text6.setFill(Color.RED);
         
         Group root = new Group(text1, text2, text3, text4, text5, text6);
         Scene scene = new Scene(root, 400, 200, Color.LIGHTCYAN);
