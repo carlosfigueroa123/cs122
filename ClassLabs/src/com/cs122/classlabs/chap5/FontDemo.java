@@ -29,19 +29,35 @@ public class FontDemo extends Application
                 FontPosture.ITALIC, 28);
         Font font3 = Font.font("Arial", FontPosture.ITALIC, 14);
         
-        Text text1 = new Text(30, 55, "Dream Big");
+        Font font4 = Font.font("Georgia", FontPosture.ITALIC, 23);
+        
+        Font font5 = Font.font("Aharoni", 22);
+
+        Font font6 = Font.font("Cambria", FontWeight.BOLD, 12);
+
+        
+        Text text1 = new Text(30, 35, "Dream Big");
         text1.setFont(font1);
         text1.setUnderline(true);
         
-        Text text2 = new Text(150, 110, "Know thyself!");
+        Text text2 = new Text(150, 90, "Know thyself!");
         text2.setFont(font2);
         text2.setFill(Color.GREEN);
         
-        Text text3 = new Text(50, 150, "In theory, there is no difference " +
+        Text text3 = new Text(50, 110, "In theory, there is no difference " +
             "between theory\nand practice, but in practice there is.");
         text3.setFont(font3);
         
-        Group root = new Group(text1, text2, text3);
+        Text text4 = new Text(20, 160, "this is just additional advice...");
+        text4.setFont(font4);
+        
+        Text text5 = new Text(60, 65, "Oh captain my captain...");
+        text5.setFont(font5);
+        
+        Text text6 = new Text(250, 180, "Don't learn HTML.");
+        text6.setFont(font6);
+        
+        Group root = new Group(text1, text2, text3, text4, text5, text6);
         Scene scene = new Scene(root, 400, 200, Color.LIGHTCYAN);
         
         primaryStage.setTitle("Font Demo");
