@@ -79,11 +79,11 @@ public class StyleOptionsPane extends VBox
         	size = 60;
         }
         if (CheckBox3.isSelected()) {
-        	family = "Times";
+        	family = "Times New Roman";
         }
         
         if (CheckBox4.isSelected()) {
-        	family = "Courier";
+        	family = "Courier New";
         }
         
         if (CheckBox5.isSelected()) {

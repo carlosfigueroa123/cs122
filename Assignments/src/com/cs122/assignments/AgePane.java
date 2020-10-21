@@ -66,6 +66,7 @@ public class AgePane extends GridPane{
   
     public void processReturn(ActionEvent event) throws CentenaryException//try catch should be right here
     {
+    	except.setText("");
     	try {
     		int birthTemp = Integer.parseInt(yearOfBirth.getText());
             int ageTemp = 2020 - birthTemp;
@@ -81,6 +82,7 @@ public class AgePane extends GridPane{
     	catch (NumberFormatException exception)
     	{
     		except.setText("Invalid input. Must be an integer");
+    		
         }
     }
 }
