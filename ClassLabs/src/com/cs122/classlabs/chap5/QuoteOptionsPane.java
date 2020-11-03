@@ -42,7 +42,7 @@ public class QuoteOptionsPane extends HBox
         ToggleGroup group = new ToggleGroup();
         
         philosophyButton = new RadioButton("Philosophy");
-        philosophyButton.setSelected(true);
+        philosophyButton.setSelected(true);//kind of a redundant 
         philosophyButton.setToggleGroup(group);
         philosophyButton.setOnAction(this::processRadioButtonAction);
         
@@ -55,12 +55,12 @@ public class QuoteOptionsPane extends HBox
         comedyButton.setOnAction(this::processRadioButtonAction);
         
         VBox options = new VBox(philosophyButton, carpentryButton,
-            comedyButton);
+            comedyButton);//is v to be vertically
         options.setAlignment(Pos.CENTER_LEFT);
         options.setSpacing(10);
         
         setSpacing(20);
-        getChildren().addAll(options, quotePane);
+        getChildren().addAll(options, quotePane);// you have to include the pane in the adding
     }
     
     //--------------------------------------------------------------------

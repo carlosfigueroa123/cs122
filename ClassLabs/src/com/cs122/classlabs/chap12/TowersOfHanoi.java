@@ -33,15 +33,15 @@ public class TowersOfHanoi
     //  by moving a subtower of n-1 disks out of the way, moving one
     //  disk, then moving the subtower back. Base case of 1 disk.
     //-----------------------------------------------------------------
-    private void moveTower(int numDisks, int start, int end, int temp)
+    private void moveTower(int numDisks, int start, int end, int temp)//start is tower (1), temp tower (2) and end 3 (in constructor)
     {
         if (numDisks == 1)
             moveOneDisk(start, end);
         else
         {
-            moveTower(numDisks-1, start, temp, end);
+            moveTower(numDisks-1, start, temp, end);//move n-1 starting from tower 1, setting temp as the goal (end), by using end (tower 3) as a temp (like tower 2)
             moveOneDisk(start, end);
-            moveTower(numDisks-1, temp, end, start);
+            moveTower(numDisks-1, temp, end, start);//starting from temp (tower2), to get to end (tower3), using start (tower 1) as a temp (like tower 2)
         }
     }
 

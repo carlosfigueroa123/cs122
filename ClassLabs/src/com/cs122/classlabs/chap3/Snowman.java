@@ -58,10 +58,10 @@ public class Snowman extends Application
 	        rightArm.setStrokeWidth(3);
 	        
 
-	        Rectangle stovepipe = new Rectangle(60, 0, 40, 50);
-	        Rectangle brim = new Rectangle(50, 45, 60, 5);
+	        Rectangle stovepipe = new Rectangle(70, 0, 40, 50);//60
+	        Rectangle brim = new Rectangle(60, 45, 60, 5);//50
 	        Group hat = new Group(stovepipe, brim);
-	        hat.setTranslateX(10);
+	        //hat.setTranslateX(10);
 	        hat.setRotate(15);
 
 	        Group snowman = new Group(base, middle, head, leftEye, rightEye,

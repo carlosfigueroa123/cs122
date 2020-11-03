@@ -41,7 +41,7 @@ public class StyleOptionsPane extends VBox
         options.setSpacing(20);  // between the check boxes
         
         setSpacing(20);  // between the text and the check boxes
-        getChildren().addAll(phrase, options);
+        getChildren().addAll(options, phrase);
     }
     
     //--------------------------------------------------------------------

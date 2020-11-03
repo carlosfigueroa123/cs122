@@ -19,7 +19,7 @@ public class FahrenheitPane extends GridPane // all methods here come from gridp
 //if we dont inherite gridpane class, we have to create an object of the class
 {
     private Label result;
-    private TextField fahrenheit; //what does textfield means specifically
+    private TextField fahrenheit; //textfield recieves the input text, the main part here
 
     //--------------------------------------------------------------------
     //  Sets up a GUI containing a labeled text field for converting

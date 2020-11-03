@@ -21,7 +21,7 @@ public class ArcDisplay extends Application
     //--------------------------------------------------------------------
     //  Draws three arcs based on the same underlying ellipse.
     //--------------------------------------------------------------------
-    public void start(Stage primaryStage)
+    public void start(Stage primaryStage)// look at the start method, which is OVERRIDED from application class
     {
         Ellipse backgroundEllipse = new Ellipse(250, 150, 170, 100);
         backgroundEllipse.setFill(null);
