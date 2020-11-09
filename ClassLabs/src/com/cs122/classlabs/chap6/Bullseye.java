@@ -23,8 +23,8 @@ public class Bullseye extends Application
     public void start(Stage primaryStage)
     {
         Group root = new Group();
-        Color ringColor = Color.BLACK;
-        Circle ring = null;
+        Color ringColor = Color.BLACK;//this is definetly to initialize it
+        Circle ring = null;//is this to initialized?
         int radius = 150;        
         
         for (int count = 1; count <= 8; count++)
@@ -38,7 +38,7 @@ public class Bullseye extends Application
             else
                 ringColor = Color.BLACK;
             
-            radius = radius - 20;
+            radius = radius - 20;//diminishes the radius, that's what makes it smaller
         }
         
         ring.setFill(Color.RED);

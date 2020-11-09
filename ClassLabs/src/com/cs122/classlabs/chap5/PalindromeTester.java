@@ -32,7 +32,9 @@ public class PalindromeTester
             while (str.charAt(left) == str.charAt(right) && left < right)
             {
                 left++;
+                
                 right--;
+                
             }
 
             System.out.println();

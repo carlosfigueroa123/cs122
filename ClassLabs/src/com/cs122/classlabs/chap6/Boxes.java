@@ -25,11 +25,11 @@ public class Boxes extends Application
     public void start(Stage primaryStage)
     {
         Group root = new Group();
-        Random gen = new Random();
+        Random gen = new Random();//new stuff
         
         for (int count = 1; count <= 50; count++)
         {
-            int x = gen.nextInt(350) + 1;
+            int x = gen.nextInt(350) + 1;//explain the relationship between gen and nextin (which is used in scanning)
             int y = gen.nextInt(350) + 1;
             
             int width = gen.nextInt(50) + 1;
@@ -41,7 +41,7 @@ public class Boxes extends Application
             else if (height < 10)
                 fill = Color.GREEN;
             
-            Rectangle box = new Rectangle(x, y, width, height);
+            Rectangle box = new Rectangle(x, y, width, height);//is like an event handler to put things together
             box.setStroke(Color.WHITE);
             box.setFill(fill);
             
