@@ -30,10 +30,10 @@ public class Boxes extends Application
         for (int count = 1; count <= 50; count++)
         {
             int x = gen.nextInt(350) + 1;//explain the relationship between gen and nextin (which is used in scanning)
-            int y = gen.nextInt(350) + 1;
+            int y = gen.nextInt(350) + 1;//a number between 1 and 350, thats what it mean
             
-            int width = gen.nextInt(50) + 1;
-            int height = gen.nextInt(50) + 1;
+            int width = gen.nextInt(50) + 1;// a number between 1 and 50
+            int height = gen.nextInt(50) + 1;//next int is an ordered random generator with parameters
             
             Color fill = null;
             if (width < 10)

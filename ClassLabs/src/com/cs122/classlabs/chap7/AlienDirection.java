@@ -27,15 +27,18 @@ public class AlienDirection extends Application
     //--------------------------------------------------------------------
     public void start(Stage primaryStage)
     {
-        Image alien = new Image("alien.png");
-        
+        Image alien = new Image("https://images-na.ssl-images-amazon.com/images/I/71J6UxizXyL._AC_SL1500_.jpg");
         imageView = new ImageView(alien);
-        imageView.setX(20);
-        imageView.setY(20);
+        imageView.setX(-20);
+        imageView.setY(-20);
+        imageView.setScaleX(0.20);
+        imageView.setScaleY(0.20);
+        
+        //checked for ways to read the url
         
         Group root = new Group(imageView);
 
-        Scene scene = new Scene(root, 400, 200, Color.BLACK);
+        Scene scene = new Scene(root, 400, 200, Color.GREEN);
         scene.setOnKeyPressed(this::processKeyPress);
 
         primaryStage.setTitle("Alien Direction");
@@ -51,16 +54,16 @@ public class AlienDirection extends Application
     {
         switch (event.getCode())
         {
-            case UP:
-                imageView.setY(imageView.getY() - JUMP);
+            case W:
+                imageView.setY(imageView.getY() - JUMP);//what is jump? 
                 break;
-            case DOWN:
+            case S:
                 imageView.setY(imageView.getY() + JUMP);
                 break;
-            case RIGHT:
+            case D:
                 imageView.setX(imageView.getX() + JUMP);
                 break;
-            case LEFT:
+            case A:
                 imageView.setX(imageView.getX() - JUMP);
                 break;
             default:

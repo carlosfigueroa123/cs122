@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 //  Demonstrates the use of loops and conditionals to draw.
 //************************************************************************
 
-public class Bullseye extends Application
+public class Bullseye2 extends Application
 {
     //--------------------------------------------------------------------
     //  Displays a target using concentric black and white circles
@@ -27,7 +27,7 @@ public class Bullseye extends Application
         Circle ring = null;//is this to initialized?
         int radius = 150;        
         
-        for (int count = 1; count <= 8; count++)
+        for (int count = 1; count <= 80; count++)
         {
             ring = new Circle(160, 160, radius);
             ring.setFill(ringColor);
@@ -38,7 +38,7 @@ public class Bullseye extends Application
             else
                 ringColor = Color.BLACK;
             
-            radius = radius - 20;//diminishes the radius, that's what makes it smaller
+            radius = radius - 2;//diminishes the radius, that's what makes it smaller
         }
         
         ring.setFill(Color.RED);//how is not white? how do we define that it is the last one?

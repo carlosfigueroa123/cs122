@@ -39,9 +39,10 @@ public class TransformationDemo extends Application
 //        ImageView imgView1 = new ImageView(img);
 //
 //        ImageView imgView2 = new ImageView(img);
-//        imgView2.setX(300);
+//        imgView2.setX(300);// that it should start from 300 on x
 //        imgView2.setScaleX(0.7);
 //        imgView2.setScaleY(0.7);
+        //if we sety to 0, the first one will be y 0 but the second one wouldnt because of the scaling, center doesnt changes.
 
 // ROTATION
 //        Rectangle rec = new Rectangle(50, 100, 200, 50);

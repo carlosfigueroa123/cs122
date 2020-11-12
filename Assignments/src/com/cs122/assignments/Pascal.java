@@ -14,7 +14,7 @@ public class Pascal {
 
   public static void print(int n) {
     for (int i = 0; i < n; i++) {
-      for (int k = 0; k < n - i; k++) {
+      for (int k = 0; k < n - i; k++) {// -i because the spaces are reduced
        System.out.print(" ");
       }
       for (int j = 0; j <= i; j++) {
