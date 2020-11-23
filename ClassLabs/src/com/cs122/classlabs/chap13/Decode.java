@@ -18,7 +18,7 @@ public class Decode
     {  
         Scanner scan = new Scanner(System.in);
 
-        Stack<Character> word = new Stack<Character>();
+        Stack<Character> word = new Stack<Character>();//what the stack is gonna hold, any type of data
 
         String message;
         int index = 0;
@@ -30,7 +30,7 @@ public class Decode
         while (index < message.length())
         {
             // Push word onto stack
-            while (index < message.length() && message.charAt(index) != ' ')
+            while (index < message.length() && message.charAt(index) != ' ')//when you use scanner, the last character is a space
             {
                 word.push(message.charAt(index));
                 index++;
@@ -38,7 +38,7 @@ public class Decode
 
             // Print word in reverse
             while (!word.empty())
-                System.out.print(word.pop());
+                System.out.print(word.pop());//print, not println
             System.out.print(" ");
             index++;
         }

@@ -26,7 +26,7 @@ public class MagazineList
     public void add(Magazine mag)
     {
         MagazineNode node = new MagazineNode(mag);
-        MagazineNode current;
+        MagazineNode current;//pointer for the beginning to search for the end of the list
 
         if (list == null)
             list = node;
@@ -34,8 +34,8 @@ public class MagazineList
         {
             current = list;
             while (current.next != null)
-                current = current.next;
-            current.next = node;
+                current = current.next;//going forward
+            current.next = node;//assigning, this is where we add node, the new magazine introduced
         }
     }
 
@@ -61,10 +61,11 @@ public class MagazineList
     //  An inner class that represents a node in the magazine list.
     //  The public variables are accessed by the MagazineList class.
     //*****************************************************************
-    private class MagazineNode
+    public class MagazineNode
     {
-        public Magazine magazine;
-        public MagazineNode next;
+        public Magazine magazine;//object it has
+        public MagazineNode next;//reference, pointing to the next magazine node, whcih we use on top
+        //next comes from the node class
 
         //--------------------------------------------------------------
         //  Sets up the node
