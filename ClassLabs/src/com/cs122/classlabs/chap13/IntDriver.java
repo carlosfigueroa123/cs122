@@ -12,6 +12,8 @@ public class IntDriver {
 		intlist.print();
 		intlist.add(3);
 		intlist.print();
+		intlist.delete(2);
+		intlist.print();
 	}
 
 }

@@ -10,23 +10,46 @@ public StackList(){
 }
 
 public void push (int x) {
-	//adds a node to the beginning of the list
-	//exactly as add method
+  
+     stackNode oldtop = top;
+     top = new stackNode(x);
+     top.data = x;
+     top.next = oldtop;
 }
 
 public int pop() {
-	//it deletes the first element of the list. and it is int because of int data, not objects of magazine
-	//exactly as delete method
+	
+	    int data = top.data;
+	    top = top.next;
+	    return data;
 }
-
 public int peek() {
-	//it returns the last element of the list, so it is like pop method but it doesnt deletes it
+	int data = top.data;
+    return data;
 }
 
-public boolean empty() {
-	//if the first item is empty, returns true. If there are elements there, returns false
-}
+public boolean isEmpty(){ 
+    if (top == null) {
+    	return true;
+    }
+    else {
+    	return false;
+    }
+  }
 
+public void print() {
+	
+	 stackNode current = top;
+	 
+
+       while (current != null)
+       {
+          System.out.print(current.data + "---->");//we use data since it comes from intnode class (object)
+          current = current.next;// as in the last while loop, for it to keep running
+       }
+       System.out.println(" ");
+       
+}
 
 private class stackNode {
 	public int data;//this is to store the data of the node
