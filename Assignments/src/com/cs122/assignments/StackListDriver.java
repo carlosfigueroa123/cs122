@@ -1,4 +1,4 @@
-package com.cs122.classlabs.chap13;
+package com.cs122.assignments;
 
 public class StackListDriver {
 
