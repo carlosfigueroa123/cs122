@@ -23,6 +23,8 @@ public int pop() {
 	    top = top.next;
 	    return data;
 }
+
+
 public int peek() {
 	int data = top.data;
     return data;
