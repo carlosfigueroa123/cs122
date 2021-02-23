@@ -65,9 +65,16 @@ public class ShoppingList {
 		 }
 	 
 	public void remove(String oldItem) {
+		try{
 		 Node v = get(oldItem);
 		 removeDef(v);
-		   }
+		  }
+		catch(Exception e) {
+			System.out.println("The element you are trying to delete does not exists. Try again");
+			System.out.println(" ");
+		}
+	}
+		
 
 	 private void removeDef(Node node) {
 	 Node predecessor = node.getPrev( );
