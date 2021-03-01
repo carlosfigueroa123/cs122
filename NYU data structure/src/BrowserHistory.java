@@ -27,7 +27,6 @@ class HistoryState {//this is like the node class
 	   page = p;
 	   }
 }
-
 class BrowserHistory {
 	   HistoryState current;
 	   WebPage errorPage;
