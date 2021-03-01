@@ -9,7 +9,7 @@ public StackList(){
 	top = null;
 }
 
-public void push (int x) {
+public void push (String x) {
   
      stackNode oldtop = top;
      top = new stackNode(x);
@@ -17,14 +17,14 @@ public void push (int x) {
      top.next = oldtop;
 }
 
-public int pop() {
+public String pop() {
 	
-	    int data = top.data;
+	    String data = top.data;
 	    top = top.next;
 	    return data;
 }
-public int peek() {
-	int data = top.data;
+public String peek() {
+	String data = top.data;
     return data;
 }
 
@@ -52,10 +52,10 @@ public void print() {
 }
 
 private class stackNode {
-	public int data;//this is to store the data of the node
+	public String data;//this is to store the data of the node
 	public stackNode next;
 	
-	public stackNode(int x1)
+	public stackNode(String x1)
     {
         data = x1;
         next = null;
