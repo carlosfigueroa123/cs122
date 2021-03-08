@@ -36,7 +36,7 @@ public class PowersMatrix {
 	  c2 = c1;//since it is the same array, then the columns are the same
   	
   	if(k == 0) {
-  		return getIdentity(2);
+  		return getIdentity(r1);
   	}
   	
   	int[][] result = power1(matrix, k/2);
@@ -51,7 +51,9 @@ public class PowersMatrix {
     
     public static int [][] getIdentity(int size) {
         int[][] matrix = new int[size][size];
-        for(int i = 0; i < size; i++) matrix[i][i] = 1;
+        for(int i = 0; i < size; i++) {
+        	matrix[i][i] = 1;
+        }
         return matrix;
       }
     
