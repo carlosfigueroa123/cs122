@@ -1,5 +1,5 @@
 
-public class PowersMatrix {
+public class PowersMatrix2 {
 
 	public static void main(String[] args) {
         int [][] matrix = {{0,-1},{1,1}};
@@ -28,7 +28,29 @@ public class PowersMatrix {
         
     }
 
-  public static int [][] power1(int[][] matrix, int k)
+    
+//    static int[][] powerMatrix (int[][] a, int p) {
+//        int[][] result = a;
+//        if(p == 0) {
+//        	return getIdentity(2);
+//        }
+//        
+//        for (int n = 1; n < p; n++)
+//            result = multiplyMatrices(result,a,2,2,2);
+//        return result;
+//    }
+    
+//    public static int[][] power(int[][] a, int powerRaised) {//inneficient case
+//    	int[][] result1 = a;
+//    	
+//        if (powerRaised != 0) {
+//            return multiplyMatrices(power(result1, powerRaised - 1),a, 2,2,2);
+//        }
+//        else
+//            return getIdentity(2);
+//    }
+    
+  public static int [][] power1(int[][] matrix, int k)//most efficient form
   {
 	  int r1, c1, c2;
 	  r1 = matrix.length;
@@ -56,7 +78,7 @@ public class PowersMatrix {
       }
     
     
-    public static int[][] multiplyMatrices(int[][] matrix, int[][] matrixoriginal, int r1, int c1, int c2) {//n^3 efficiency aprox.
+    public static int[][] multiplyMatrices(int[][] matrix, int[][] matrixoriginal, int r1, int c1, int c2) {
         int[][] product = new int[r1][c2];
         for(int i = 0; i < r1; i++) {
             for (int j = 0; j < c2; j++) {
