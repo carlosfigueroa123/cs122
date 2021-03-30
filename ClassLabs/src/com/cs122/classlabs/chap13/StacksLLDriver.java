@@ -15,6 +15,17 @@ public class StacksLLDriver {
 		System.out.println(intList);
 		intList.push(3);
 		System.out.println(intList);
+		intList.push(4);
+		System.out.println(intList);
+		intList.size();
+		intList.peek();
+		intList.pop();
+		System.out.println(intList);
+		
+		
+		
+		
+		System.out.println("New implementation");
 		
 		StacksLL<String> sList = new StacksLL<String>();
 		sList.push("Pace");

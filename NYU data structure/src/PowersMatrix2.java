@@ -58,7 +58,7 @@ public class PowersMatrix2 {
 	  c2 = c1;//since it is the same array, then the columns are the same
   	
   	if(k == 0) {
-  		return getIdentity(2);
+  		return getIdentity(r1);
   	}
   	
   	int[][] result = power1(matrix, k/2);

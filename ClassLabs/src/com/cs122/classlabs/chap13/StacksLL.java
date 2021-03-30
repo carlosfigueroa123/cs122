@@ -22,13 +22,26 @@ public class StacksLL <T>{
 		
 	}
 	
-	public T peek(){  //returns first element of the list
+	public void peek(){  //returns first element of the list
 		
-		return l.get(0);
+		System.out.println(l.get(0));
 	}
 	
 	public String toString() {  //the name of this method is case sensitive
 		
 		return l.toString();
 	}
+	
+	public void size(){ //does it has to be int or could it be void for my implementation
+ 
+		System.out.println(l.size());
+
+	}
+
+	public boolean isEmpty(){
+
+		return l.isEmpty();
+
+		}
+
 }
