@@ -49,13 +49,4 @@ public class LinkedListssss {
 		 }
 	
 	
-	public static int indexPartialSum(Node current, int target) {
-		if() {
-			
-		}
-		else(){
-			
-		}
-		return 0;
-	}
 }

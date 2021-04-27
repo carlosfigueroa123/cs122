@@ -53,7 +53,7 @@ public class NodeTree {
 			print_tree(node.right); 
 		} 
 
-		public void static main(String args[]) 
+		public void main(String args[]) 
 		{ 
 
 			BinaryTree tree = new BinaryTree(); 
